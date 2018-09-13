@@ -1,7 +1,8 @@
 # Add  code here!
 def prime?(integer)
-  limit = integer - Array (2..limit)
-  if integer_range.each{|number| integer % number == 0}
+  limit = integer - 1
+  range = Array (2..limit)
+  if range.each{|number| integer % number == 0}
     false
   else
     true
