@@ -1,10 +1,10 @@
 # Add  code here!
-def prime?(integer)
-  limit = integer - 1
-  range = Array (2..limit)
-  if range.each{|number| integer % number == 0}
-    false
+def prime?(num)
+  if num < 0 || num == 0 || num == 1
+    return false
   else
-    true
+    (2..num-1).to_a.all? do |possible_factor|
+      num % possible_factor != 0
+    end
   end
 end
